@@ -1,0 +1,46 @@
+<mat-toolbar class="head">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()" id="sideBar">
+            <mat-icon class="drawer">menu</mat-icon>
+        </button>
+            <h3 class="fon">
+                PAYROLL
+            </h3>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="align-middle">
+            <ul fxLayout="row" fxLayoutGap="10px" class="mt-3">   
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon class="setti">settings</mat-icon>
+                    </button>
+                    
+                    <mat-menu #menu="matMenu">
+                        
+                        <a style="text-decoration: none;">
+                            <button mat-menu-item>
+                                <mat-icon>supervised_user_circle</mat-icon>
+                                User Details
+                            </button>
+                        </a>
+                        <a style="text-decoration: none;">
+                            <button mat-menu-item>
+                                <mat-icon>contact_support</mat-icon>
+                                Contact Us
+                            </button>
+                        </a>
+                        <a style="text-decoration: none;">
+                            <button mat-menu-item>     
+                                <mat-icon>lock_open</mat-icon>
+                                Change Password
+                            </button>
+                            </a>
+                        <button mat-menu-item >
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign Out
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+
+</mat-toolbar>
