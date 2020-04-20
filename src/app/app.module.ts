@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login/login.component';
 import { DefaultComponent } from './layouts/default/default/default.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './shared/shared.module'
-import { MatDividerModule,MatInputModule, MatFormFieldModule, MatTableModule, MatIconModule, MatDrawer,MatDrawerContent,MatDrawerContainer } from '@angular/material';
+import { MatDividerModule,MatInputModule, MatFormFieldModule, MatTableModule, MatIconModule, MatDrawer,MatDrawerContent,MatDrawerContainer, MatPaginator, MatSelect, MatOption, MatTooltip } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { from } from 'rxjs';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
@@ -16,12 +16,27 @@ import { EmployeerootComponent } from './admin/employee/employeeroot/employeeroo
 import { InvestmentActualComponent } from './admin/investment-actual/investment-actual.component';
 import { InvestmentPlannedComponent } from './admin/investment-planned/investment-planned.component';
 import { TaxRateComponent } from './admin/tax-rate/tax-rate.component';
-import { SalaryComponent } from './admin/salary/salary.component';
 import { SalaryStatusRootComponent } from './admin/salary-status/salary-status-root/salary-status-root.component';
 import { LeaverootComponent } from './admin/leave-management/leaveroot/leaveroot.component';
 import { CreateEmployeeComponent } from './admin/employee/create-employee/create-employee.component';
 import { UploadExcelComponent } from './admin/employee/upload-excel/upload-excel.component';
 import { UpdateEmployeeComponent } from './admin/employee/update-employee/update-employee.component';
+import { ApprovedSalaryComponent } from './admin/salary-status/approved-salary/approved-salary.component';
+import { RejectedSalaryComponent } from './admin/salary-status/rejected-salary/rejected-salary.component';
+import { CreateLeaveComponent } from './admin/leave-management/create-leave/create-leave.component';
+import { LeaveDetailsComponent } from './admin/leave-management/leave-details/leave-details.component';
+import { SalaryRootComponent } from './admin/salary/salary-root/salary-root.component';
+import { CreateSalaryComponent } from './admin/salary/create-salary/create-salary.component';
+import { UpdateSalaryComponent } from './admin/salary/update-salary/update-salary.component';
+import { ApplyLeaveComponent } from './user/apply-leave/apply-leave.component';
+import { ApproveRejectLeaveComponent } from './user/approve-reject-leave/approve-reject-leave.component';
+import { ApproveRejectsalaryComponent } from './user/approve-rejectsalary/approve-rejectsalary.component';
+import { InvestmentactualComponent } from './user/investmentactual/investmentactual.component';
+import { UserleaveRootComponent } from './user/leave-status/userleave-root/userleave-root.component';
+import { InvestplannedComponent } from './user/investplanned/investplanned.component';
+import { AppLeaveComponent } from './user/leave-status/app-leave/app-leave.component';
+import { RejLeaveComponent } from './user/leave-status/rej-leave/rej-leave.component';
+import { UserdashboardComponent } from './user/userdashboard/userdashboard/userdashboard.component';
 
 
 @NgModule({
@@ -35,7 +50,6 @@ import { UpdateEmployeeComponent } from './admin/employee/update-employee/update
     InvestmentActualComponent,
     InvestmentPlannedComponent,
     TaxRateComponent,
-    SalaryComponent,
     SalaryStatusRootComponent,
     LeaverootComponent,
     CreateEmployeeComponent,
@@ -43,7 +57,23 @@ import { UpdateEmployeeComponent } from './admin/employee/update-employee/update
     UpdateEmployeeComponent,
     MatDrawer,
     MatDrawerContent,
-    MatDrawerContainer
+    MatDrawerContainer,
+    ApprovedSalaryComponent,
+    RejectedSalaryComponent,
+    CreateLeaveComponent,
+    SalaryRootComponent,
+    LeaveDetailsComponent,
+    CreateSalaryComponent,
+    UpdateSalaryComponent,
+    ApplyLeaveComponent,
+    ApproveRejectLeaveComponent,
+    ApproveRejectsalaryComponent,
+    InvestmentactualComponent,
+    UserleaveRootComponent,
+    AppLeaveComponent,
+    RejLeaveComponent,
+    InvestplannedComponent,
+    UserdashboardComponent
   ],
   imports: [
     BrowserModule,

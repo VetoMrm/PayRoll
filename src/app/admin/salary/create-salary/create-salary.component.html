@@ -1,1 +1,173 @@
-<p>create-salary works!</p>
+<div class="container shadow-lg p-5 mb-5 rounded" style="border: 2px solid blue;">
+    <div class=" mt-3">
+        <p class="font-weight-bold" style="font-size: xx-large;">CREATE SALARY</p>
+    </div>
+    <mat-divider style="background-color: black;"></mat-divider>
+
+    <form action="">
+        <div class="d-flex justify-content-center mt-3">
+            <label for="employeeName"  style="align-self: center; font-size: large;" class="mt-3">Employee Name</label>
+        </div>
+        <div class="d-flex justify-content-center">
+            <select id="inputState" class="form-control col-6" style="border: 1px solid blue;">
+                <option selected>Select Here</option>
+                <option>Software Engineer</option>
+                <option>Automation</option>
+                <option>IT Support</option>
+                <option>System Admin</option>
+            </select>
+        </div>
+
+        <div class=" mt-5">
+            <p class="font-weight-bold" style="font-size: xx-large;">SALARY DETAILS PER MONTH</p>
+        </div>
+        <mat-divider style="background-color: black;"></mat-divider>
+
+        <div class="form-row mt-5">
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="basal">Basic Salary</label>
+              <input type="text" class="form-control" placeholder="Basic Salary">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="hra">HRA Salary</label>
+              <input type="text" class="form-control" placeholder="HRA Salary">
+            </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="basal">Special Allowance</label>
+              <input type="text" class="form-control" placeholder="Special Allowance">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="hra">Medical Allowance</label>
+              <input type="text" class="form-control" placeholder="Medical Allowance">
+            </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="basal">Conveyance Allowance</label>
+              <input type="text" class="form-control" placeholder="Conveyance Allowance">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="hra">Bonus / Incentive</label>
+              <input type="text" class="form-control" placeholder="Bonus / Incentive">
+            </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="basal">Dearness Allowance</label>
+              <input type="text" class="form-control" placeholder="Dearness Allowance">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="hra">Others Salary</label>
+              <input type="text" class="form-control" placeholder="Others Salary">
+            </div>
+            </div>
+          </div>
+
+          <div class=" mt-5">
+            <p class="font-weight-bold" style="font-size: xx-large;">DEDUCTIONS</p>
+        </div>
+        <mat-divider style="background-color: black;"></mat-divider>
+
+        <div class="d-flex justify-content-center mt-3">
+            <label for="employeeName"  style="align-self: center; font-size: large;" class="mt-3">Professional Tax</label>
+        </div>
+        <div class="d-flex justify-content-center">
+            <input type="text" class="form-control col-6" placeholder="Professional Tax">
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn bg-success text-white col-4 mt-4  btn-lg float-right">Calculate TDS</button>
+        </div>
+
+        
+        <div class="form-row mt-3">
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="basal">TDS</label>
+              <input type="text" class="form-control" placeholder="Tax Deducted At Source">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="hra">PF</label>
+              <input type="text" class="form-control" placeholder="Provident Fund">
+            </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="basal">Advance Salary</label>
+              <input type="text" class="form-control" placeholder="Advance salary">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="hra">ESIC</label>
+              <input type="text" class="form-control" placeholder="ESIC">
+            </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center mt-3">
+            <label for="employeeName"  style="align-self: center; font-size: large;" class="mt-3">Total Deduction</label>
+        </div>
+        <div class="d-flex justify-content-center">
+            <input type="text" class="form-control col-6" placeholder="Total Deduction">
+        </div>
+
+
+        <div class=" mt-5">
+            <p class="font-weight-bold" style="font-size: xx-large;">Total Net Salary</p>
+        </div>
+        <mat-divider style="background-color: black;"></mat-divider>
+
+        <div class="form-row">
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="basal">Gross Salary</label>
+              <input type="text" class="form-control" placeholder="Gross salary">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group col-md-10 mt-3">
+              <label for="hra">Net Salary</label>
+              <input type="text" class="form-control" placeholder="Net Salary">
+            </div>
+            </div>
+          </div>
+
+          <div class="form-row mt-5">
+            <div class="col-md-6 mt-3">
+              <div class="col-md-10 mb-3">
+                <button type="button" class="btn btn-danger col-7  btn-lg float-right">Cancel</button>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="col-md-7 mb-3">       
+                <button type="button" class="btn btn-lg btn-block  btn-primary">Create</button>
+                </div>
+            </div>
+          </div>
+    </form>
+  </div>
