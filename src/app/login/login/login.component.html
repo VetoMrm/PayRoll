@@ -9,16 +9,19 @@
             </div>
             <div class="col-md-6 d-flex justify-content-center">
               <div class="col-md-10 mb-3 mt-5"> 
+                <form action="/default" method="GET" class="form-group">
                 <p class="d-flex justify-content-center" style="font-size: xx-large;">LOGIN</p>      
                 <label for="username" class="mt-3">USERNAME</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" #name>
 
                 <label for="pass" class="mt-3">PASSWORD</label>
-                <input type="password" class="form-control">
+                <input type="password" class="form-control" #password autocomplete>
                 <div class="mt-4">
-                <button type="button" class="btn btn-primary col-6  btn-lg" (click)=valid();>Login</button>
+                <button type="button" class="btn btn-primary col-6  btn-lg" (click)="valid(name.value,password.value)">Login</button>
                 <button type="button" class="btn btn-danger col-5 btn-lg float-right" style="font-size: 18px;">Forgot Password</button>
               </div>
+              <span *ngIf="invalid" style="color: red; text-align: center;">Invalid Credentials</span>
+            </form>
                 </div>
             </div>
           </div>  

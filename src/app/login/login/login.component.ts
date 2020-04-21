@@ -8,11 +8,20 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  invalid:boolean = false;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
-  valid(){
-    this.router.navigate(['/default']);
-  }
+  valid(userName:string,password:string, FormData):any{
+    if((userName=='Admin' || userName=='User' ) && password=='12345678'){
+      localStorage.setItem("userName",userName);
+      return this.router.navigate(['/default']);
+   }else{
+    this.invalid=true;
+      FormData.clear();
+      return false;
+    }
+    }
 }
