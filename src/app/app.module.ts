@@ -11,6 +11,7 @@ import { SharedModule } from './shared/shared.module'
 import { MatDividerModule,MatInputModule, MatFormFieldModule, MatTableModule, MatIconModule, MatDrawer,MatDrawerContent,MatDrawerContainer, MatPaginator, MatSelect, MatOption, MatTooltip } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { from } from 'rxjs';
+import { ChartsModule } from 'ng2-charts';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { EmployeerootComponent } from './admin/employee/employeeroot/employeeroot.component';
 import { InvestmentActualComponent } from './admin/investment-actual/investment-actual.component';
@@ -37,6 +38,9 @@ import { InvestplannedComponent } from './user/investplanned/investplanned.compo
 import { AppLeaveComponent } from './user/leave-status/app-leave/app-leave.component';
 import { RejLeaveComponent } from './user/leave-status/rej-leave/rej-leave.component';
 import { UserdashboardComponent } from './user/userdashboard/userdashboard/userdashboard.component';
+import { UserDetailsComponent } from './activities/user-details/user-details.component';
+import { ContactUSComponent } from './activities/contact-us/contact-us.component';
+import { ChangePasswordComponent } from './activities/change-password/change-password.component';
 
 
 @NgModule({
@@ -73,7 +77,10 @@ import { UserdashboardComponent } from './user/userdashboard/userdashboard/userd
     AppLeaveComponent,
     RejLeaveComponent,
     InvestplannedComponent,
-    UserdashboardComponent
+    UserdashboardComponent,
+    UserDetailsComponent,
+    ChangePasswordComponent,
+    ContactUSComponent
   ],
   imports: [
     BrowserModule,
@@ -88,6 +95,7 @@ import { UserdashboardComponent } from './user/userdashboard/userdashboard/userd
     ReactiveFormsModule,
     SharedModule,
     MatDividerModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

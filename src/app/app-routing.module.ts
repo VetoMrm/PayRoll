@@ -28,11 +28,14 @@ import { InvestplannedComponent } from './user/investplanned/investplanned.compo
 import { AppLeaveComponent } from './user/leave-status/app-leave/app-leave.component';
 import { RejLeaveComponent } from './user/leave-status/rej-leave/rej-leave.component';
 import { UserdashboardComponent } from './user/userdashboard/userdashboard/userdashboard.component';
+import { UserDetailsComponent } from './activities/user-details/user-details.component';
+import { ChangePasswordComponent } from './activities/change-password/change-password.component';
+import { ContactUSComponent } from './activities/contact-us/contact-us.component';
 
 
 const routes: Routes = [{ path:'',component:LoginComponent},
 {  path: 'default', component:DefaultComponent , children:[
-{  path: 'dashboard', component:DashboardComponent},
+{  path: '', component:DashboardComponent},
 { path: 'employee',component:EmployeerootComponent},
 { path:'addEmployee',component:CreateEmployeeComponent},
 { path:'uploadexcel',component:UploadExcelComponent},
@@ -60,6 +63,14 @@ const routes: Routes = [{ path:'',component:LoginComponent},
 { path: 'apprejsal',component: ApproveRejectsalaryComponent},
 { path: 'userinvstplanned',component: InvestplannedComponent},
 { path: 'userinvstactual',component: InvestmentactualComponent},
+
+{ path: 'userdetails',component: UserDetailsComponent},
+{ path: 'changePassword',component: ChangePasswordComponent},
+{ path: 'contactUs',component: ContactUSComponent},
+
+
+
+
 
 ]}];
 

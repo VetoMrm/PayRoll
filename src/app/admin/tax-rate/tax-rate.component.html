@@ -1,10 +1,10 @@
-<div class="container shadow-lg p-3 mb-5  rounded" style="border: 2px solid;">
+<div class="container shadow-lg p-3 mb-5  rounded" style="border: 2px solid blue;">
     <div class="text-center mt-3">
         <p class="font-weight-bold" style="font-size: x-large;"> TAX SLAB</p>
     </div>
     <mat-divider style="background-color: black;"></mat-divider>
-
-    <mat-form-field class="col-6 mt-5">
+<div class="p-5">
+    <mat-form-field class="col-12 ">
         <mat-label>Filter</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium">
       </mat-form-field>
@@ -55,4 +55,5 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
+    </div>
 </div>

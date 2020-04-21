@@ -3,13 +3,14 @@ label{
 }
 
 input{
-    border: 1px solid;
+    border: 1px solid blue;
 }
 
 .main{
     margin-left: 30px;
 }
 
-.rrr{
-    
+.supp{
+    color: red;
+    font-weight: bolder;
 }

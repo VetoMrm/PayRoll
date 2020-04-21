@@ -1,1 +1,19 @@
-<p>dashboard works!</p>
+<div class="container bg-white shadow-lg rounded p-3" style="border: 2px solid blue;">
+<div>
+    <div>
+      <div style="display: block">
+        <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+  <button  (click)="randomize()" class="btn btn-danger btn-block  btn-lg mt-3 col-6 ">Update</button>
+</div>
+</div>
