@@ -4,18 +4,26 @@
   </div>
   <mat-divider style="background-color: black;"></mat-divider>
 
-  <form>
+  <form [formGroup]='formGroup'>
       <div class="form-row mt-5">
         <div class="col-md-6">
         <div class="form-group col-md-10 mt-3">
           <label for="employeeName">Employee Name<sup class="supp">*</sup></label>
-          <input type="text" class="form-control" required placeholder="Employee Name">
+          <input type="text" class="form-control" id="userName" name="username" formControlName='employeeName' placeholder="Employee Name">
+          <div *ngIf='employeeName.invalid && (employeeName.dirty || employeeName.touched)' class="text-danger">
+            <div *ngIf='employeeName.errors.required'>User Name Required</div>
+            <div *ngIf='employeeName.errors.pattern'>User Name should contains only alphabets</div> 
+           </div>
         </div>
         </div>
         <div class="col-md-6  d-flex justify-content-center">
         <div class="form-group col-md-10 mt-3">
           <label for="empnameadhar">Employee Name As Per Adhar<sup class="supp">*</sup></label>
-          <input type="text" class="form-control" placeholder="Employee Name As Per Adhar">
+          <input type="text" class="form-control" id="empnameadhar" name="empnameadhar" formControlName='empnameadhar' placeholder="Employee Name As Per Adhar">
+          <div *ngIf='empnameadhar.invalid && (empnameadhar.dirty || empnameadhar.touched)' class="text-danger">
+            <div *ngIf='empnameadhar.errors.required'>User Name Required</div>
+            <div *ngIf='empnameadhar.errors.pattern'>User Name should contains only alphabets</div> 
+           </div>
         </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-create-employee',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateEmployeeComponent implements OnInit {
 
-  constructor() { }
+  formGroup;
+
+  constructor(private fb : FormBuilder) { }
 
   ngOnInit() {
+    this.formGroup= this.fb.group({
+      employeeName:[null, [Validators.required,Validators.pattern(/^[a-zA-Z\s]+$/)]],
+      empnameadhar:[null,[Validators.required,Validators.pattern(/^[a-zA-Z\s]+$/)]]
+       }); 
   }
 
+  get employeeName(){
+    return this.formGroup.get('employeeName');
+  }
+  get empnameadhar(){
+    return this.formGroup.get('empnameadhar');
+  }
 }
