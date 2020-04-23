@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router'
 import { DefaultComponent } from './default/default.component';
-import { MatSidenavModule, MatDividerModule, MatInputModule, MatFormFieldModule, MatTableModule, MatPaginatorModule, MatIconModule, MatDrawer } from '@angular/material';
+import { MatSidenavModule, MatInputModule, MatFormFieldModule, MatTableModule, MatPaginatorModule, MatIconModule, MatDrawer } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DummyComponent } from 'src/app/dummy/dummy.component';
@@ -19,7 +19,6 @@ LoginComponent],
     RouterModule,
     SharedModule,
     MatSidenavModule,
-    MatDividerModule,
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
@@ -30,7 +29,6 @@ LoginComponent],
   ],
   exports : [
     MatSidenavModule,
-    MatDividerModule,
     MatTableModule,
     MatFormFieldModule,
     MatInputModule
